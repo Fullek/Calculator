@@ -37,10 +37,13 @@ public class Controler {
     }
 
     private void displayOptions() {
-//        for (String s : menuOptionsList()) {
-////            System.out.println(s);
-////        }
+
         List<String> options = menuOptionsList();
+        displayer(options);
+
+    }
+
+    private void displayer(List<String> options) {
         for (String option : options) {
             System.out.println(option);
         }
